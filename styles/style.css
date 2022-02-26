@@ -42,9 +42,6 @@
   font-size: 11px;
   text-align: center;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 
 /* HEADER & NAV SECTION */
 
@@ -215,4 +212,63 @@ nav {
 
 .gallery-item {
   width: 50%;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  background-color: hsl(168, 34%, 41%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  color: hsl(198, 62%, 26%);
+}
+
+.footer h4 {
+  font: 700 1.5rem "Barlow";
+  margin-bottom: 2rem;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  margin-bottom: 2rem;
+}
+
+.footer ul li {
+  font: 600 1.2rem "Barlow";
+  list-style: none;
+}
+
+.footer ul li.desktop-only {
+  display: none;
+}
+
+.footer ul li a,
+.footer ul li a:visited {
+  color: hsl(198, 62%, 26%);
+  text-decoration: none;
+}
+
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  padding: 5px;
+  font-size: 1rem;
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a,
+.attribution a:visited {
+  color: hsl(228, 67%, 19%);
+  text-decoration: none;
 }
