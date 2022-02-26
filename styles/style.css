@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+/*
+- Family: [Barlow](https://fonts.google.com/specimen/Barlow)
+- Weights: 600
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700, 900
+
+
+## Colors
+
+### Primary
+
+- Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%)
+
+
+
+*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* HEADER & NAV SECTION */
+
+.logo {
+  font: 600 1.5rem "Barlow", sans-serif;
+}
+.header {
+  position: absolute;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo,
+nav {
+  padding: 16px 20px;
+}
+
+/* HERO SECTION */
+
+.hero {
+  background: no-repeat center center/cover
+    url(../images/mobile/image-header.jpg);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font: 700 1.2rem "Fraunces", sans-serif;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.hero .hero-top {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-bottom {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero svg {
+  flex: 1;
+}
+
+/* INFO SECTION */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.info .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(167, 40%, 24%);
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 1.45em;
+}
+
+.info .text h2 {
+  font: 700 2em "Fraunces";
+  color: hsl(198, 62%, 26%);
+  margin-bottom: 2rem;
+}
+
+.info .text p.desc {
+  font: 600 1em "Barlow";
+  margin-bottom: 2rem;
+}
+
+.info .text p.cta {
+  font: 700 1em "Fraunces";
+  color: hsl(198, 62%, 26%);
+}
+
+.info .BG {
+  background: center 100% / cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.info .graphicdesign {
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+}
+.info .photography {
+  background-image: url(../images/mobile/image-photography.jpg);
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials {
+  padding: 3.5rem 1rem;
+  text-align: center;
+}
+
+.testimonials h3 {
+  font: 700 1.5rem "Fraunces";
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: hsl(232, 10%, 55%);
+}
+
+.quote__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  color: hsl(232, 10%, 55%);
+}
+
+.quote img {
+  width: 25%;
+  border-radius: 50%;
+  margin-top: 4rem;
+}
+
+.quote p.desc {
+  margin-top: 2rem;
+  color: hsl(212, 27%, 19%);
+  font: 600 1rem "Barlow";
+}
+
+.quote p.name {
+  margin-top: 2rem;
+  color: hsl(212, 27%, 19%);
+  font: 900 1.2rem "Fraunces";
+}
+
+.quote p.jobtitle {
+  margin-top: 1rem;
+  font: 600 1rem "Barlow";
+}
+
+/* GALLERY SECTION */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  width: 50%;
+}
