@@ -63,18 +63,8 @@ nav {
   left: 6vw;
   overflow: hidden;
 }
-/* .mobilenav::after {
-  position: absolute;
-  content: "";
-  width: 0px;
-  height: 0px;
-  border-top: 55px solid transparent;
-  border-bottom: 0px solid transparent;
-  border-right: 55px solid #fff;
 
-  top: -50px;
-  right: 0px;
-} */
+/* MOBILE NAV SECTION - WORK IN PROGRESS */
 
 .mobilenav {
   padding: 0;
