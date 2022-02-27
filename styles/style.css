@@ -25,8 +25,6 @@
 - Grayish blue: hsl(210, 4%, 67%)
 - White: hsl(0, 0%, 100%)
 
-
-
 */
 
 *,
@@ -36,11 +34,6 @@
   margin: 0;
   padding: 0;
   /* outline: 1px solid red; */
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
 }
 
 /* HEADER & NAV SECTION */
@@ -60,6 +53,80 @@
 .header .logo,
 nav {
   padding: 16px 20px;
+}
+
+.mobilenavcontainer {
+  position: absolute;
+  height: 75vh;
+  width: 88vw;
+  top: 6vh;
+  left: 6vw;
+  overflow: hidden;
+}
+/* .mobilenav::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 55px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 55px solid #fff;
+
+  top: -50px;
+  right: 0px;
+} */
+
+.mobilenav {
+  padding: 0;
+  margin: 0;
+  width: 88vh;
+  height: 200px; /* to be adjusted */
+}
+
+.mobilenav-top {
+  margin-left: 75vw;
+  overflow: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 10vw 10vw;
+  border-color: transparent transparent #fff transparent;
+}
+
+.mobilenav-main {
+  background: #fff;
+  width: 85vw;
+  text-align: center;
+}
+
+.mobilenav-main ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  gap: 10px;
+}
+.mobilenav-main ul li {
+  width: 75%;
+  line-height: 2rem;
+}
+
+.mobile-nav-off {
+  transform: translate(200%, 0%);
+  transition: 500ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mobile-nav-on {
+  transform: translate(0%, 0%);
+  transition: 500ms;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* HERO SECTION */
@@ -262,6 +329,7 @@ nav {
 /* ATTRIBUTION */
 
 .attribution {
+  text-align: center;
   padding: 5px;
   font-size: 1rem;
   color: hsl(228, 45%, 44%);
