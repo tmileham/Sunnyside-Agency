@@ -36,6 +36,10 @@
   /* outline: 1px solid red; */
 }
 
+body {
+  font-size: 18px;
+}
+
 /* HEADER & NAV SECTION */
 
 .logo {
@@ -153,7 +157,7 @@ nav.mobile__nav {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font: 700 1.4rem "Fraunces", sans-serif;
+  font: 700 1.2rem "Fraunces", sans-serif;
   text-align: center;
   letter-spacing: 0.2rem;
 }
@@ -411,5 +415,64 @@ nav.mobile__nav {
     background: hsl(0, 0%, 100%);
     color: #000;
     border-radius: 12px;
+  }
+
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .info > * {
+    width: 50%;
+  }
+
+  .info > :nth-child(2) {
+    order: -1;
+  }
+
+  .info .BG {
+    width: 50%;
+  }
+
+  .info .text {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 1.45em;
+  }
+
+  .info .text h2 {
+    font: 700 1em "Fraunces";
+    margin-bottom: 0.4rem;
+  }
+
+  .info .text p.desc {
+    font: 600 0.5em "Barlow";
+    margin-bottom: 2rem;
+  }
+
+  .info .text p.cta {
+    font: 700 0.5em "Fraunces";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .info .text {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 1.45em;
+  }
+
+  .info .text h2 {
+    font: 700 1em "Fraunces";
+    margin-bottom: 1.2rem;
+  }
+
+  .info .text p.desc {
+    font: 600 1em "Barlow";
+    margin-bottom: 2rem;
+  }
+
+  .info .text p.cta {
+    font: 700 0.9rem "Fraunces";
   }
 }
