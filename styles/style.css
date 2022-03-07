@@ -51,40 +51,54 @@
 }
 
 .header .logo,
-nav {
+nav.mobile__nav {
   padding: 16px 20px;
 }
 
+.desktop__nav {
+  display: none;
+}
+
+/* Burger Display */
+
+.hidden {
+  z-index: -5;
+  display: none;
+}
+
+.show {
+  width: 24px;
+  height: 24px;
+  z-index: 1337;
+  display: block;
+}
+/* MOBILE NAV SECTION - WORK IN PROGRESS */
+
 .mobilenavcontainer {
   position: absolute;
-  height: 75vh;
-  width: 88vw;
-  top: 6vh;
+  height: 85vh;
+  width: 87vw;
+  top: 6%;
   left: 6vw;
   overflow: hidden;
 }
 
-/* MOBILE NAV SECTION - WORK IN PROGRESS */
-
-.mobilenav {
-  width: 88vh;
-  height: 200px; /* to be adjusted */
-}
-
 .mobilenav-top {
-  margin-left: 75vw;
+  margin-left: 80vw;
   overflow: auto;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 10vw 10vw;
+  border-width: 0 0 7vw 7vw;
   border-color: transparent transparent #fff transparent;
 }
 
 .mobilenav-main {
   background: #fff;
-  width: 85vw;
+  width: 87vw;
   text-align: center;
+  font: 600 1.2rem "Barlow";
+  color: hsl(232, 10%, 55%);
 }
 
 .mobilenav-main ul {
@@ -93,16 +107,27 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
-  gap: 10px;
+  padding: 2rem;
+  gap: 1.6rem;
+  /* outline: 1px solid blue; */
 }
 .mobilenav-main ul li {
-  width: 75%;
-  line-height: 2rem;
+  width: 55%;
+  line-height: 2.5rem;
+  /* outline: 1px solid violet; */
+}
+
+.mobilenav-main ul li.contact {
+  font: 700 1.1rem "Fraunces";
+  text-transform: uppercase;
+  color: hsl(167, 40%, 24%);
+  line-height: 3.5rem;
+  border-radius: 35px;
+  background: hsl(51, 100%, 49%);
 }
 
 .mobile-nav-off {
-  transform: translate(200%, 0%);
+  transform: translate(250%, 0%);
   transition: 500ms;
   position: absolute;
   top: 0;
@@ -128,7 +153,7 @@ nav {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  font: 700 1.2rem "Fraunces", sans-serif;
+  font: 700 1.4rem "Fraunces", sans-serif;
   text-align: center;
   letter-spacing: 0.2rem;
 }
@@ -191,6 +216,32 @@ nav {
 .info .text p.cta {
   font: 700 1em "Fraunces";
   color: hsl(198, 62%, 26%);
+}
+
+.info .text a {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.info .text a.yellow {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 39%,
+    rgba(250, 212, 0, 1) 100%
+  );
+}
+
+.info .text a.red {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 39%,
+    rgba(254, 120, 103, 1) 100%
+  );
+}
+
+.info .text p.cta a {
+  color: hsl(198, 62%, 26%);
+  text-decoration: none;
 }
 
 .info .BG {
@@ -281,9 +332,12 @@ nav {
   color: hsl(198, 62%, 26%);
 }
 
-.footer h4 {
-  font: 700 1.5rem "Barlow";
+.footer svg {
   margin-bottom: 2rem;
+}
+
+.footer svg path {
+  fill: hsl(198, 62%, 26%);
 }
 
 .footer ul {
@@ -327,4 +381,35 @@ nav {
 .attribution a:visited {
   color: hsl(228, 67%, 19%);
   text-decoration: none;
+}
+
+/* MOBILE 0-760 */
+/* TABLET 760-1200 */
+/* DESKTOP 1200+ */
+
+@media screen and (min-width: 768px) {
+  .mobile__nav {
+    display: none;
+  }
+
+  .desktop__nav {
+    display: block;
+  }
+
+  .desktop__nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 0.2rem;
+    margin-right: 20px;
+  }
+
+  .desktop__nav li {
+    display: inline-block;
+    padding: 10px 25px;
+  }
+  .desktop__nav li.contact {
+    background: hsl(0, 0%, 100%);
+    color: #000;
+    border-radius: 12px;
+  }
 }
