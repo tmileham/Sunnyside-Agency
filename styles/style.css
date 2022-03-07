@@ -169,6 +169,10 @@ nav.mobile__nav {
   align-items: center;
 }
 
+.hero .hero-top h1 {
+  font-size: 3rem;
+}
+
 .hero .hero-bottom {
   flex: 1;
   display: flex;
@@ -418,6 +422,14 @@ nav.mobile__nav {
     color: #000;
     border-radius: 12px;
   }
+  .hero {
+    background: no-repeat center 70% / cover
+      url(../images/desktop/image-header.jpg);
+  }
+
+  .hero .hero-top h1 {
+    font-size: 5rem;
+  }
 
   .info {
     flex-direction: row;
@@ -434,7 +446,8 @@ nav.mobile__nav {
 
   .info .BG {
     width: 50%;
-    height: 75vh;
+    height: 85vh;
+    background-position: center center;
   }
 
   .info .text {
