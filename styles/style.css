@@ -405,6 +405,7 @@ nav.mobile__nav {
     list-style-type: none;
     gap: 0.2rem;
     margin-right: 20px;
+    font: 600 0.8em "Barlow";
   }
 
   .desktop__nav li {
@@ -412,6 +413,7 @@ nav.mobile__nav {
     padding: 10px 25px;
   }
   .desktop__nav li.contact {
+    text-transform: uppercase;
     background: hsl(0, 0%, 100%);
     color: #000;
     border-radius: 12px;
@@ -432,6 +434,7 @@ nav.mobile__nav {
 
   .info .BG {
     width: 50%;
+    height: 75vh;
   }
 
   .info .text {
@@ -452,6 +455,21 @@ nav.mobile__nav {
 
   .info .text p.cta {
     font: 700 0.5em "Fraunces";
+  }
+
+  .quote__container {
+    flex-direction: row;
+  }
+
+  .quote img {
+    width: 4.5rem;
+  }
+  .quote .desc {
+    padding: 0 1.6rem;
+  }
+
+  .gallery-item {
+    width: 25%;
   }
 }
 
@@ -474,5 +492,9 @@ nav.mobile__nav {
 
   .info .text p.cta {
     font: 700 0.9rem "Fraunces";
+  }
+
+  .quote .desc {
+    padding: 0 2rem;
   }
 }
