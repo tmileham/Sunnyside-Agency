@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](https://github.com/tmileham/Sunnyside-Agency/blob/main/Screenshot.png)
 
 ### Links
 
